@@ -1,5 +1,32 @@
+buildscript {
+    repositories {
+        google() // Asegúrate de que esta línea esté presente para los repositorios de Google
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0'
+        // Otras dependencias si es necesario
+    }
+}
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     id 'com.android.application' version '8.0.2' apply false
     id 'com.android.library' version '8.0.2' apply false
+}
+
+allprojects{
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven{
+            url "https://jitpack.io"
+        }
+
+    }
+}
+
+task clear(type: Delete){
+    delete rootProject.buildDir
 }
