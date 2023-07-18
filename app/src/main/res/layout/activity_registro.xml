@@ -66,7 +66,7 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         app:cardCornerRadius="12dp"
-        android:layout_height="500dp"
+        android:layout_height="540dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
@@ -92,6 +92,7 @@
                 android:layout_marginTop="50dp"/>
 
             <EditText
+                android:id="@+id/txtInputNameUser"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_tex_background"
@@ -105,6 +106,7 @@
                 android:layout_marginTop="20dp"/>
 
             <EditText
+                android:id="@+id/txtInputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_tex_background"
@@ -118,6 +120,7 @@
                 android:layout_marginTop="20dp"/>
 
             <EditText
+                android:id="@+id/txtInputPass"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_tex_background"
@@ -132,6 +135,7 @@
                 android:inputType="textPassword"
                 />
             <EditText
+                android:id="@+id/txtInputTelefono"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_tex_background"
@@ -140,6 +144,22 @@
                 android:drawablePadding="10dp"
                 android:inputType="number"
                 android:maxLength="10"
+                android:paddingStart="10dp"
+                android:drawableTint="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/txtInputEdad"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_tex_background"
+                android:hint="Edad"
+                android:drawableStart="@drawable/im_edad"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:maxLength="3"
                 android:paddingStart="10dp"
                 android:drawableTint="@color/black"
                 android:layout_marginStart="20dp"
